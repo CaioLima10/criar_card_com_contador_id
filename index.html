@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>desafio conclusao</title>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container-cards">
+      <button onclick="createCard()" class="createCard">
+        <svg id="Mais" width="50" height="45" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="4" width="2" height="10" fill="white"/>
+            <rect x="10" y="4" width="2" height="10" transform="rotate(90 10 4)" fill="white"/>
+        </svg>                    
+    </button>
+      <div class="container-cards_column">
+        <span>Todo</span>
+        <p id="counter-todo"></p>
+
+        <div
+          class="container-cards_column-cards"
+          id="column-todo"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"
+        ></div>
+      </div>
+
+      <div class="container-cards_column">
+        <span>Doing</span>
+        <p id="counter-doing"></p>
+
+        <div
+          class="container-cards_column-cards"
+          id="column-doing"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"
+        ></div>
+      </div>
+
+      <div class="container-cards_column">
+        <span>Done</span>
+        <p id="counter-done"></p>
+
+        <div
+          class="container-cards_column-cards"
+          id="column-done"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"
+        ></div>
+      </div>
+    </div>
+  </body>
+</html>
